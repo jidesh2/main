@@ -9,7 +9,50 @@
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#1f1f1f"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2" >
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="16dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logo Placeholder"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="956dp"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="16dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="update location"
+                android:id="@+id/im"
+                android:background="@drawable/box_transparent_autocomplete"
+                android:textColor="@color/colorOrange"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,8 +60,8 @@
         android:gravity="center"
         android:orientation="horizontal"
         android:padding="8dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout2">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -99,8 +142,7 @@
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5" >
+                android:layout_height="150dp">
 
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/recyclerView"
@@ -111,7 +153,8 @@
                     android:textAlignment="center"
                     android:outlineProvider="bounds"
                     android:layout_marginLeft="2.5dp"
-                    android:layout_marginRight="2.5dp" />
+                    android:layout_marginRight="2.5dp"
+                     />
             </LinearLayout>
 
         </LinearLayout>
@@ -120,7 +163,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="0.8" />
+            android:layout_weight="0.8"
+            android:layout_gravity="center_vertical" />
 
     </LinearLayout>
 

@@ -1,5 +1,143 @@
 <resources>
     <string name="app_name">onroute</string>
-    <string name="title_activity_maps">Map</string>
+
     <string name="title_activity_maps4">Map</string>
+    <string-array name="navDrawerItems">
+        <item>Music</item>
+        <item>TV</item>
+        <item>Sports</item>
+        <item>News</item>
+        <item>Lifestyle</item>
+        <item>Exclusive Offers</item>
+    </string-array>
+
+    <string-array name="navDrawerDrawables">
+        <item>@drawable/drawer_note</item>
+        <item>@drawable/drawer_tv</item>
+        <item>@drawable/drawer_football</item>
+        <item>@drawable/drawer_news</item>
+        <item>@drawable/drawer_lifestyle</item>
+        <item>@drawable/drawer_star</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="screen_drawer_button_about">About</string>
+    <string name="screen_drawer_button_help">Help</string>
+    <string name="drawer_about_message">Crafted with passion in India</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="player_error">Error initializing YouTube player</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="skip">Skip Ad</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="open_drawer">Open drawer</string>
+    <string name="close_drawer">Close drawer</string>
+
+    <string name="showcasebutton_text">Got it</string>
+    <string name="share">Share</string>
+    <string name="report">Report</string>
+    <string name="report_dialog_title">Choose a reason</string>
+    <string name="chooser_title">Open with</string>
+
+    <string name="text_size_extra_small">Extra small</string>
+    <string name="text_size_small">Small</string>
+    <string name="text_size_medium">Medium</string>
+    <string name="text_size_large">Large</string>
+    <string name="text_size_extra_large">Extra large</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="rate_app">Rate the app</string>
+    <string name="leave_feedback">Leave feedback</string>
+    <string name="no_playstore">No Play Store app found</string>
+
+    <!-- preferences -->
+    <string name="pref_external_title">Use external browser</string>
+    <string name="pref_external_summary">Read articles in external browser</string>
+    <string name="pref_color_code_title">Color code</string>
+    <string name="pref_highlight_updated_title">Highlight updated stories</string>
+    <string name="pref_highlight_updated_summary">Show changes from last refresh</string>
+    <string name="pref_custom_tab_title">Use custom Chrome tab (beta)</string>
+    <string name="pref_custom_tab_summary">Open Chrome tab instead of browser</string>
+    <string name="pref_story_display_title">Default story display</string>
+    <string name="pref_theme_title">Theme</string>
+    <string name="pref_search_sort_title">Sort by</string>
+    <string name="pref_search_sort_value_recent">recent</string>
+    <string name="pref_search_sort_value_default">default</string>
+    <string name="pref_text_size_title">Text size</string>
+    <string name="pref_font_title">Font</string>
+    <string name="pref_comment_display_title">Thread display</string>
+    <string name="pref_max_lines_title">Comment display</string>
+    <string name="pref_lazy_load_title">Lazy load content</string>
+    <string name="pref_lazy_load_summary">Load content only when you switch to its tab</string>
+    <string name="pref_imagewifi_title">Download images only on Wifi</string>
+    <string name="pref_imagewifi_summary">Avoid downloading images when on mobile data.</string>
+
+
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_sepia">Sepia</string>
+    <string name="theme_green">Green</string>
+    <string name="theme_solarized_dark">Solarized Dark</string>
+    <string name="theme_blue">Blue</string>
+    <string name="theme_orange">Orange</string>
+    <string name="theme_solarized">Solarized</string>
+
+    <string name="feedback">Feedback</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="comment_hint">Comment</string>
+    <string name="feedback_note">
+        <![CDATA[
+            Your feedback will be made public as a <a href="https://github.com/thebigindiannews/android-app/issues">Github issue</a>.
+        ]]>
+    </string>
+    <string name="comment_required">Comment is required</string>
+    <string name="feedback_sent">Feedback sent. Thank you!</string>
+    <string name="feedback_failed">Failed to send, please try again</string>
+
+    <string name="screen_select_destination_ride_text">I\'m taking ride for</string>
+    <string name="layout_select_destination_food_text">Food</string>
+    <string name="layout_select_destination_others_text">Others</string>
+    <string name="layout_select_destination_tourist_text">Tourist</string>
+    <string name="layout_select_destination_work_text">Work</string>
+    <string name="layout_select_destination_drinks_text">Drinks</string>
+    <string name="layout_select_destination_travel_text">Travel</string>
+
+
+    <string name="wifi_ssid">Login to OnRoute</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_sms">SmsActivity</string>
+    <string name="title_activity_wifi_welcome">Onroute Dashboard</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="title_activity_video_player">VideoPlayerActivity</string>
+    <string name="login_instruction_landing">
+        <![CDATA[
+            <font color=#FFFFFF>Connect to the </font>
+            <font color=#FF9800>OnRoute</font>
+            <font color=#FFFFFF> Bluetooth to start</font>
+        ]]>
+    </string>
+    <string name="login_instruction_detailed">
+        <![CDATA[
+            <font color=#FFFFFF>Connect to the </font>
+            <font color=#FF9800>OnRoute</font>
+            <font color=#FFFFFF> Bluetooth to start</font>
+        ]]>
+    </string>
+    <string name="or">OR</string>
+    <string name="title_activity_music">MusicActivity</string>
+    <string name="auth_login_delete">Delete</string>
+    <string name="auth_login_enter">Enter</string>
+    <string name="auth_login_enter_phone_number">Enter Phone Number</string>
 </resources>

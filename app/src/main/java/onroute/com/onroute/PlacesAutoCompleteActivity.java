@@ -1,5 +1,8 @@
 package onroute.com.onroute;
 
+import android.app.Activity;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -11,6 +14,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -49,7 +53,7 @@ public class PlacesAutoCompleteActivity extends FragmentActivity implements OnMa
 
 
     private static final LatLngBounds BOUNDS_INDIA = new LatLngBounds(
-            new LatLng(-0, 0), new LatLng(0, 0));
+            new LatLng(23.71307,68.03215),new LatLng(27.12622, 97.16712));
     private GoogleMap mMap;
     private final static int CONNECTION_FAILURE_RESOLUTION_REQUEST = 9000;
     private GoogleApiClient mGoogleApiClient;
@@ -74,6 +78,14 @@ public class PlacesAutoCompleteActivity extends FragmentActivity implements OnMa
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync((OnMapReadyCallback) this);
+        Button im=(Button) findViewById(R.id.im);
+        im.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in =new Intent(getApplicationContext(),DashboardActivity_.class);
+                startActivity(in);
+            }
+        });
         gps = new GPSTracker(PlacesAutoCompleteActivity.this);
         mLocationRequest = LocationRequest.create()
                 .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
@@ -145,6 +157,9 @@ public class PlacesAutoCompleteActivity extends FragmentActivity implements OnMa
                                     mMap.addMarker(new MarkerOptions().position(destination).title("Marker in destination"));
                                     //  mMap.moveCamera(CameraUpdateFactory.newLatLng(destination));
                                     mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(destination,16));
+
+                                    Intent in =new Intent(getApplicationContext(),DashboardActivity_.class);
+                                    startActivity(in);
                                     //Toast.makeText(getApplicationContext(), Constants.SOMETHING_WENT_WRONG, Toast.LENGTH_SHORT).show();
                                 }
                             }
@@ -308,7 +323,11 @@ public class PlacesAutoCompleteActivity extends FragmentActivity implements OnMa
             super.onPostExecute(aVoid);
 
 Log.d("test",responseServer);
-                Toast.makeText(getApplicationContext(),dist1, Toast.LENGTH_SHORT).show();
+                SharedPreferences sp = getSharedPreferences("ETApref", Activity.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sp.edit();
+                editor.putString("ETA", dist1);
+                editor.apply();
+
         }
     }
     @Override

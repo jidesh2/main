@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:context="onroute.com.onroute.Lifestylectivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#1d1d1d">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#202020">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/scrollView2"
+                        android:layout_alignParentTop="true">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+
+                        app:cardCornerRadius="5dp"
+
+                        app:cardElevation="1dp"
+                        app:cardUseCompatPadding="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.4"
+
+                                android:background="@drawable/djj">
+
+                                    <ImageButton
+                                        android:layout_width="match_parent"
+                                        android:layout_height="150dp"
+                                        android:id="@+id/imageButton111"
+                                        android:onClick="FragmentOneClick" />
+
+
+
+
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="150dp"
+                                        android:id="@+id/imageView8"
+                                        android:src="@drawable/vogue"
+                                        android:scaleType="fitXY"
+                                        android:background="@drawable/djj" />
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_alignParentStart="true">
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="#000000"
+                                        android:alpha="0.6" />
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:text="vogue style!"
+                                            android:id="@+id/textView11"
+                                            android:background="#00000000"
+                                            android:textColor="#ffffff"
+                                            android:textAlignment="center"
+                                            android:gravity="center"
+                                            android:textSize="20dp" />
+                                    </RelativeLayout>
+
+                            </RelativeLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+
+                                app:cardCornerRadius="5dp"
+
+                                app:cardElevation="1dp"
+                                app:cardUseCompatPadding="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp">
+
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:background="@drawable/djj">
+
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:id="@+id/imageButton101"
+                                    android:onClick="FragmentTwoClick" />
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:id="@+id/imageView9"
+                                    android:src="@drawable/missmalini"
+                                    android:scaleType="fitXY"
+                                    android:background="@drawable/djj" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_alignBottom="@+id/imageButton101"
+                                    android:layout_alignStart="@+id/imageButton101">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="#000000"
+                                        android:alpha="0.6" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="miss malini"
+                                        android:id="@+id/textView10"
+                                        android:background="#00000000"
+                                        android:textColor="#ffffff"
+                                        android:textAlignment="center"
+                                        android:gravity="center"
+                                        android:textSize="20dp" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+
+                                app:cardCornerRadius="5dp"
+
+                                app:cardElevation="1dp"
+                                app:cardUseCompatPadding="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:background="@drawable/djj">
+
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:id="@+id/imageButton81"
+                                    android:onClick="FragmentThreeClick" />
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:id="@+id/imageView10"
+                                    android:src="@drawable/topgear"
+                                    android:scaleType="fitXY"
+                                    android:background="@drawable/djj" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_alignBottom="@+id/imageButton81"
+                                    android:layout_alignStart="@+id/imageButton81">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="#000000"
+                                        android:alpha="0.6" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="top gear"
+                                        android:id="@+id/textView8"
+                                        android:background="#00000000"
+                                        android:textColor="#ffffff"
+                                        android:textAlignment="center"
+                                        android:gravity="center"
+                                        android:textIsSelectable="false"
+                                        android:textSize="20dp" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+                        </LinearLayout>
+                    </ScrollView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:background="#1D1D1D">
+
+
+                    <fragment
+                        android:id="@+id/fragment_switch"
+                        android:name="onroute.com.onroute.MyvogueFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -23,6 +23,7 @@ import com.google.android.gms.location.places.AutocompleteFilter;
 import com.google.android.gms.location.places.AutocompletePrediction;
 import com.google.android.gms.location.places.AutocompletePredictionBuffer;
 import com.google.android.gms.location.places.Places;
+import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 
 import java.util.ArrayList;
@@ -60,7 +61,8 @@ public class PlacesAutoCompleteAdapter
      * Sets the bounds for all subsequent queries.
      */
     public void setBounds(LatLngBounds bounds) {
-        mBounds = bounds;
+        mBounds =  new LatLngBounds(
+                new LatLng(-0, 0), new LatLng(0, 0));;
     }
 
     /**
